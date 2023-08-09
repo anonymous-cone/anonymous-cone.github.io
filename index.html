@@ -89,30 +89,30 @@
 </section>
 
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop"> -->
+    <!-- <div class="hero-body"> -->
       <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
         <source src="./static/videos/teaser.mp4"
                 type="video/mp4">
       </video> -->
-      <img src="./static/images/pipe.png"
+      <!-- <img src="./static/images/pipe.png"
                  class="interpolation-image"
                  alt="Interpolation end reference image."/>
       <h2 class="subtitle has-text-centered">
         <span class="dnerf">CONE</span> is a two-stage text-to-3D scene generation model.
       </h2>
     </div>
-  </div>
-</section>
+  </div> 
+</section> -->
 
 
 
 
-<section class="section">
-  <div class="container is-max-desktop">
+<!-- <section class="section">
+  <div class="container is-max-desktop"> -->
     <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered"> 
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
@@ -139,7 +139,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
@@ -156,7 +156,7 @@
 
     <!--/ Paper video. -->
   </div>
-</section>
+</section> 
 
 
 <section class="section">
@@ -170,9 +170,20 @@
           <p>
             An office in style of Dunhuang Mogao Grottoes
           </p>
-          <img src="./static/gifs/mogao.gif"
+          <img src="./static/gifs/mogao.gif" 
                  class="interpolation-image"
-                 alt="Interpolation end reference image."/>
+                 alt="Interpolation end reference image."
+                 id="myGif"
+                 />
+          <script>
+              var gif = document.getElementById('myGif');
+              
+              gif.addEventListener('load', function() {
+                setInterval(function() {
+                  gif.src = gif.src; // 重新加载 GIF 图像
+                }, 3000);
+              });
+            </script>
         </div>
       </div>
       <!--/ Visual Effects. -->
