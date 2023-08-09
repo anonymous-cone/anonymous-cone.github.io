@@ -21,7 +21,7 @@
 
     gtag('config', 'G-PYVRSFMDRL');
   </script>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
@@ -45,6 +45,29 @@
     }
     .blue-text {
       color: blue;
+    }
+    .text-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .text-wrapper {
+      flex: 1;
+    }
+
+    .arrow-container {
+      flex: 0 0 auto;
+      margin: 100px 0px;
+    }
+
+    .fa-arrow-right {
+      font-size: 24px;
+      color: black;
+    }
+    .divider {
+      flex: 0 0 auto;
+      margin: 0 10px;
+      border-top: 1px dashed #FFF;
     }
   </style>
   
@@ -161,19 +184,20 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title">Scene Generation</h2>
+    <h2 class="title" align="center">Scene Generation</h2>
     <div class="columns is-centered">
 
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
-          <p style="text-align: center;">
-            An office in style of Dunhuang Mogao Grottoes
-          </p>
+          
           <video id="matting-video" autoplay loop muted playsinline height="100%">
               <source src="./static/gifs/mogao.mp4"
                       type="video/mp4">
             </video>
+          <p style="text-align: center;">
+            An office in style of Dunhuang Mogao Grottoes
+          </p>
         </div>
       </div>
       <!--/ Visual Effects. -->
@@ -183,13 +207,14 @@
         <!-- <h2 class="title is-3">Matting</h2> -->
         <div class="columns is-centered">
           <div class="column content">
-            <p style="text-align: center;">
-              An office in style of the game, "Pac-Man"
-            </p>
+            
             <video id="matting-video" autoplay loop muted playsinline height="100%">
               <source src="./static/gifs/pac.mp4"
                       type="video/mp4">
             </video>
+            <p style="text-align: center;">
+              An office in style of the game, "Pac-Man"
+            </p>
             <!-- <img src="./static/gifs/pac.gif"
                  class="interpolation-image"
                  alt="Interpolation end reference image."/> -->
@@ -202,13 +227,14 @@
         <!-- <h2 class="title is-3">Matting</h2> -->
         <div class="columns is-centered">
           <div class="column content">
-            <p style="text-align: center;">
-              A dining room in style of the movie, "Frozen"
-            </p>
+            
             <video id="matting-video" autoplay loop muted playsinline height="100%">
               <source src="./static/gifs/ice.mp4"
                       type="video/mp4">
             </video>
+            <p style="text-align: center;">
+              A dining room in style of the movie, "Frozen"
+            </p>
           </div>
 
         </div>
@@ -228,13 +254,14 @@
             <source src="./static/videos/dollyzoom-stacked.mp4"
                     type="video/mp4">
           </video> -->
-          <p style="text-align: center;">
-            <br>A street in style of underwater world
-          </p>
+          
           <video id="matting-video" autoplay loop muted playsinline height="100%">
               <source src="./static/gifs/street.mp4"
                       type="video/mp4">
             </video>
+            <p style="text-align: center;">
+            A street in style of underwater world
+          </p>
         </div>
       </div>
       <!--/ Visual Effects. -->
@@ -244,13 +271,14 @@
         <!-- <h2 class="title is-3">Matting</h2> -->
         <div class="columns is-centered">
           <div class="column content">
-            <p style="text-align: center;">
-              <br>An street in style of cyberpunk 
-            </p>
+            
             <video id="matting-video" autoplay loop muted playsinline height="100%">
               <source src="./static/gifs/cyber.mp4"
                       type="video/mp4">
             </video>
+            <p style="text-align: center;">
+              An street in style of cyberpunk 
+            </p>
           </div>
 
         </div>
@@ -260,13 +288,14 @@
         <!-- <h2 class="title is-3">Matting</h2> -->
         <div class="columns is-centered">
           <div class="column content">
-            <p style="text-align: center;">
-              An living room in style of Roy Lichtenstein
-            </p>
+            
             <video id="matting-video" autoplay loop muted playsinline height="100%">
               <source src="./static/gifs/rl.mp4"
                       type="video/mp4">
             </video>
+            <p style="text-align: center;">
+              An living room in style of Roy Lichtenstein
+            </p>
           </div>
         </div>
       </div>
@@ -276,13 +305,14 @@
     <div class="columns is-centered">
       <div class="column">
         <div class="content">
-          <p style="text-align: center;">
-            A conference room in style of Van Gogh's painting, "Starry Night".
-          </p>
+          
           <video id="matting-video" autoplay loop muted playsinline height="100%">
               <source src="./static/gifs/vg_2.mp4"
                       type="video/mp4">
             </video>
+          <p style="text-align: center;">
+            A conference room in style of Van Gogh's painting, "Starry Night".
+          </p>
         </div>
       </div>
       <!--/ Visual Effects. -->
@@ -292,13 +322,14 @@
         <!-- <h2 class="title is-3">Matting</h2> -->
         <div class="columns is-centered">
           <div class="column content">
-            <p style="text-align: center;">
-              A conference room in style of Van Gogh's painting, "Starry Night".
-            </p>
+            
             <video id="matting-video" autoplay loop muted playsinline height="100%">
               <source src="./static/gifs/vg_1.mp4"
                       type="video/mp4">
             </video>
+            <p style="text-align: center;">
+              A conference room in style of Van Gogh's painting, "Starry Night".
+            </p>
           </div>
 
         </div>
@@ -308,13 +339,14 @@
         <!-- <h2 class="title is-3">Matting</h2> -->
         <div class="columns is-centered">
           <div class="column content">
-            <p style="text-align: center;">
-              A dinning room in style of Van Gogh's painting, "Starry Night".
-            </p>
+            
             <video id="matting-video" autoplay loop muted playsinline height="100%">
               <source src="./static/gifs/vg_0.mp4"
                       type="video/mp4">
             </video>
+            <p style="text-align: center;">
+              A dining room in style of Van Gogh's painting, "Starry Night".
+            </p>
           </div>
         </div>
       </div>
@@ -328,7 +360,7 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title">Scene Editing</h2>
+    <h2 class="title" align="center">Scene Editing</h2>
     <div class="columns is-centered">
 
       <!-- Visual Effects. -->
@@ -343,26 +375,26 @@
             <source src="./static/videos/dollyzoom-stacked.mp4"
                     type="video/mp4">
           </video> -->
-          <p style="text-align: center;">
-            A living room in style of LEGO
-          </p>
+          
           <video id="matting-video" autoplay loop muted playsinline height="100%">
               <source src="./static/gifs/lego.mp4"
                       type="video/mp4">
             </video>
+            <p style="text-align: center;">
+            A living room in style of LEGO
+          </p>
         </div>
       </div>
       <!--/ Visual Effects. -->
-
+      <div class="arrow-container">
+        <i class="fas fa-arrow-right"></i>
+      </div>
       <!-- Matting. -->
       <div class="column">
         <!-- <h2 class="title is-3">Matting</h2> -->
         <div class="columns is-centered">
           <div class="column content">
-            <p style="text-align: center;">
-              <!-- <p class="red-text">Change <i>"table"</i> to <i>"guitar"</i> </p> -->
-              Change <i>"table"</i> to <i>"guitar"</i> 
-            </p>
+            
             <!-- <video id="matting-video" controls playsinline height="100%">
               <source src="./static/videos/matting.mp4"
                       type="video/mp4">
@@ -371,19 +403,22 @@
               <source src="./static/gifs/lego_guitar.mp4"
                       type="video/mp4">
             </video>
+            <p style="text-align: center;">
+              <!-- <p class="red-text">Change <i>"table"</i> to <i>"guitar"</i> </p> -->
+              Change <i>"table"</i> to <i>"guitar"</i> 
+            </p>
           </div>
 
         </div>
       </div>
-
+      <div class="arrow-container">
+        <i class="fas fa-arrow-right"></i>
+      </div>
       <div class="column">
         <!-- <h2 class="title is-3">Matting</h2> -->
         <div class="columns is-centered">
           <div class="column content">
-            <p style="text-align: center;">
-              <!-- <p class="red-text"> Remove <i>"guitar"</i>  </p> -->
-              Remove <i>"guitar"</i>
-            </p>
+            
             <!-- <video id="matting-video" controls playsinline height="100%">
               <source src="./static/videos/matting.mp4"
                       type="video/mp4">
@@ -392,19 +427,22 @@
               <source src="./static/gifs/lego_remove.mp4"
                       type="video/mp4">
             </video>
+            <p style="text-align: center;">
+              <!-- <p class="red-text"> Remove <i>"guitar"</i>  </p> -->
+              Remove <i>"guitar"</i>
+            </p>
           </div>
 
         </div>
       </div>
-
+      <div class="arrow-container">
+        <i class="fas fa-arrow-right"></i>
+      </div>
       <div class="column">
         <!-- <h2 class="title is-3">Matting</h2> -->
         <div class="columns is-centered">
           <div class="column content">
-            <p style="text-align: center;">
-              <!-- <p class="red-text">  Become <i>"Sci-fi style"</i>  </p> -->
-              Become <i>"Sci-fi style"</i>
-            </p>
+            
             <!-- <video id="matting-video" controls playsinline height="100%">
               <source src="./static/videos/matting.mp4"
                       type="video/mp4">
@@ -413,6 +451,10 @@
               <source src="./static/gifs/lego_scifi.mp4"
                       type="video/mp4">
             </video>
+            <p style="text-align: center;">
+              <!-- <p class="red-text">  Become <i>"Sci-fi style"</i>  </p> -->
+              Become <i>"Sci-fi style"</i>
+            </p>
           </div>
 
         </div>
@@ -435,26 +477,26 @@
             <source src="./static/videos/dollyzoom-stacked.mp4"
                     type="video/mp4">
           </video> -->
-          <p style="text-align: center;">
-            A study room in style of sketch
-          </p>
+          
           <video id="matting-video" autoplay loop muted playsinline height="100%">
               <source src="./static/gifs/sketch.mp4"
                       type="video/mp4">
             </video>
+            <p style="text-align: center;">
+            A study room in style of sketch
+          </p>
         </div>
       </div>
       <!--/ Visual Effects. -->
-
+      <div class="arrow-container">
+        <i class="fas fa-arrow-right"></i>
+      </div>
       <!-- Matting. -->
       <div class="column">
         <!-- <h2 class="title is-3">Matting</h2> -->
         <div class="columns is-centered">
           <div class="column content">
-            <p style="text-align: center;">
-              <!-- <p class="red-text">Change <i>"table"</i> to <i>"guitar"</i> </p> -->
-              <br>move <i>"chair"</i>
-            </p>
+            
             <!-- <video id="matting-video" controls playsinline height="100%">
               <source src="./static/videos/matting.mp4"
                       type="video/mp4">
@@ -463,19 +505,21 @@
               <source src="./static/gifs/sketch_move.mp4"
                       type="video/mp4">
             </video>
+            <p style="text-align: center;">
+              <!-- <p class="red-text">Change <i>"table"</i> to <i>"guitar"</i> </p> -->
+              Move <i>"chair"</i>
+            </p>
           </div>
 
         </div>
       </div>
-
+      <div style="border-left:2px dashed #000;height:240px;">
+      </div>
       <div class="column">
         <!-- <h2 class="title is-3">Matting</h2> -->
         <div class="columns is-centered">
           <div class="column content">
-            <p style="text-align: center;">
-              <!-- <p class="red-text">Change <i>"table"</i> to <i>"guitar"</i> </p> -->
-              A study room in style of Monet's painting, Water Lilies
-            </p>
+            
             <!-- <video id="matting-video" controls playsinline height="100%">
               <source src="./static/videos/matting.mp4"
                       type="video/mp4">
@@ -484,19 +528,22 @@
               <source src="./static/gifs/wl_1.mp4"
                       type="video/mp4">
             </video>
+            <p style="text-align: center;">
+              <!-- <p class="red-text">Change <i>"table"</i> to <i>"guitar"</i> </p> -->
+              A study room in style of Monet's painting, Water Lilies
+            </p>
           </div>
 
         </div>
       </div>
-
+      <div class="arrow-container">
+        <i class="fas fa-arrow-right"></i>
+      </div>
       <div class="column">
         <!-- <h2 class="title is-3">Matting</h2> -->
         <div class="columns is-centered">
           <div class="column content">
-            <p style="text-align: center;">
-              <!-- <p class="red-text">Change <i>"table"</i> to <i>"guitar"</i> </p> -->
-              <br>change <i>"chair"</i>
-            </p>
+            
             <!-- <video id="matting-video" controls playsinline height="100%">
               <source src="./static/videos/matting.mp4"
                       type="video/mp4">
@@ -505,6 +552,10 @@
               <source src="./static/gifs/wl_2.mp4"
                       type="video/mp4">
             </video>
+            <p style="text-align: center;">
+              <!-- <p class="red-text">Change <i>"table"</i> to <i>"guitar"</i> </p> -->
+              Change <i>"chair"</i>
+            </p>
           </div>
 
         </div>
